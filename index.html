@@ -32,7 +32,7 @@
 
 
 
-    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.png">
 
 
 
@@ -73,7 +73,7 @@
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
         scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
-        search: true
+        search: undefined
     }
 </script>
 
@@ -105,13 +105,6 @@
 
         
 
-        
-            <form id="search-form">
-            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false" />
-            <i class="fa fa-times" onclick="resetSearch()"></i>
-            </form>
-            <div id="local-search-result"></div>
-            <p class='no-result'>No results found <i class='fa fa-spinner fa-pulse'></i></p>
         
 
 
@@ -212,7 +205,7 @@
                 
                 <section class="switch-part switch-part4">
                 
-                    <div id="js-aboutme">专注于后端</div>
+                    <div id="js-aboutme">专注于前端</div>
                 </section>
                 
             </div>
@@ -273,15 +266,6 @@
       <time datetime="2017-12-31T15:27:10.000Z" itemprop="datePublished">2017-12-31</time>
 </a>
 
- 
-    <a href="/2017/12/31/早产的2016年终总结/#comments" title="查看评论">
-        <i class="fa fa-comments-o" aria-hidden="true"></i>
-        <span class="count-comment"></span>
-        
-            <span class="ds-thread-count"  data-thread-key="2017/12/31/早产的2016年终总结/" ></span>
-        
-        
-    </a>
 
     </div>
   
@@ -354,15 +338,6 @@ type="application/x-shockwave-flash"></object>
       <time datetime="2017-02-15T14:36:35.000Z" itemprop="datePublished">2017-02-15</time>
 </a>
 
- 
-    <a href="/2017/02/15/testDuoShuo/#comments" title="查看评论">
-        <i class="fa fa-comments-o" aria-hidden="true"></i>
-        <span class="count-comment"></span>
-        
-            <span class="ds-thread-count"  data-thread-key="2017/02/15/testDuoShuo/" ></span>
-        
-        
-    </a>
 
     </div>
   
@@ -418,15 +393,6 @@ type="application/x-shockwave-flash"></object>
       <time datetime="2017-01-20T15:27:10.000Z" itemprop="datePublished">2017-01-20</time>
 </a>
 
- 
-    <a href="/2017/01/20/MYSQL对表创建修改本表记录触发器之后报错/#comments" title="查看评论">
-        <i class="fa fa-comments-o" aria-hidden="true"></i>
-        <span class="count-comment"></span>
-        
-            <span class="ds-thread-count"  data-thread-key="2017/01/20/MYSQL对表创建修改本表记录触发器之后报错/" ></span>
-        
-        
-    </a>
 
     </div>
   
@@ -543,31 +509,6 @@ type="application/x-shockwave-flash"></object>
     </script>
 
 
-    
-        <script>
-            if ($(".left-col").is(":visible")) {
-                var duoshuoQuery = {short_name:"gongsen"};
-                (function() {
-                    var d = document, s = d.createElement('script');
-                    s.src = 'http://static.duoshuo.com/embed.js';
-                    s.async = true; s.charset = 'UTF-8';
-                    (d.head || d.body).appendChild(s);
-                })();
-
-                $(document).ready(function(){
-                    var $duoshuoCount = $(".ds-thread-count");
-                    $duoshuoCount.bind("DOMNodeInserted", function(e) {
-                        var num = $(this).text().replace(/[^0-9]/ig,"");
-                        $(this).siblings(".count-comment").text(num);
-                        $(this).remove();
-                    })
-                })
-            }
-        </script>
-    
-
-     
-
 
 
 
@@ -597,23 +538,6 @@ type="application/x-shockwave-flash"></object>
         }
     
 </script>
-
-    <script>
-        var originTitle = document.title;
-        var titleTime;
-        document.addEventListener("visibilitychange", function() {
-            if (document.hidden) {
-                document.title = "(つェ⊂) 我藏好了哦~ " + originTitle;
-                clearTimeout(titleTime);
-            }
-            else {
-                document.title = "(*´∇｀*) 被你发现啦~ " + originTitle;
-                titleTime = setTimeout(function() {
-                    document.title = originTitle;
-                }, 2000);
-            }
-        })
-    </script>
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
